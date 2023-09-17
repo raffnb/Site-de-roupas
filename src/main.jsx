@@ -6,27 +6,28 @@ import Login from './views/Login/Login.jsx';
 import Home from './views/Home/Home.jsx';
 import Products from './views/Products/Products';
 import Pay from './views/Pay/Pay';
+import {PRODUCTS_MOCK} from "./mock/products.mock";
 
 
 
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <Home />,
+    element: <Login />,
   },
   
   {
     path: "/home",
-    element: <Login />,
+    element: <Home data={PRODUCTS_MOCK} />,
   },
 
   {
-    path: "/products/:productId",
-    element: <Products />,
+    path: "/products/:productsId",
+    element: <Products data={PRODUCTS_MOCK}/>,
   },
   {
     path: "/pay/:payId",
-    element: <Pay   />
+    element: <Pay   data={PRODUCTS_MOCK}/>
   },
 
 

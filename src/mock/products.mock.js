@@ -2,7 +2,7 @@ export const PRODUCTS_MOCK = [
     {
       id: 1,
       imgPath: "product-1.png",
-      imgPathDetail: "../../../public/product-1.png",
+      imgPathDetail: "../../public/product-1.png",
       title: "Cropped manga curta branco | by DNC",
       price: "R$ 139,90",
       colors: ["black"],
